@@ -1,0 +1,73 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Mental Health Disorder Broken Down into Types Among 16-24 Year olds",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/TypesOfDisorders.csv"
+  },
+  "layer": [
+    {
+      "selection": {
+        "disorder_highlight": {
+          "type": "multi",
+          "fields": ["Mental Disorder"],
+          "bind": "legend"
+        }
+      },
+      "mark": {"type": "arc", "outerRadius": 145},
+      "encoding": {
+        "theta": {"field": "Percent", "type": "quantitative", "stack": true},
+        "color": {
+          "field": "Mental Disorder",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Anxiety disorders",
+              "Affective disorders",
+              "Substance use disorders",
+              "Other"
+            ],
+            "range": ["#2D87BB", "#64C2A6", "#AADEA7", "#E6F69D"]
+          },
+          "title": "Mental Disorders"
+        },
+        "opacity": {
+          "condition": {"selection": "disorder_highlight", "value": 1},
+          "value": 0.25
+        },
+        "tooltip": [
+          {"field": "Mental Disorder", "type": "nominal"},
+          {"field": "Percent", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 100,
+        "fontSize": 15,
+        "fontWeight": "bold",
+        "color": "white"
+      },
+      "encoding": {
+        "theta": {"field": "Percent", "type": "quantitative", "stack": true},
+        "text": {"field": "Percent", "type": "quantitative"}
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "radius": 195,
+        "fontSize": 12,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "theta": {"field": "Percent", "type": "quantitative", "stack": true},
+        "text": {"field": "Mental Disorder", "type": "nominal"},
+        "color": {"field": "Mental Disorder", "type": "nominal"}
+      }
+    }
+  ],
+  "config": {}
+}
