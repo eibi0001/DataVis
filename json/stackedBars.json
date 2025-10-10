@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Psychological Distress Levels Across Age Groups",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/PsychologicalDistressByAge.csv"
+  },
+  "layer": [
+    {
+      "selection": {
+        "age_highlight": {"type": "multi", "fields": ["Age"], "bind": "legend"}
+      },
+      "mark": {"type": "bar", "width": 80},
+      "encoding": {
+        "x": {
+          "field": "Distress Level",
+          "sort": ["Low", "Moderate", "High/Very High"],
+          "type": "nominal",
+          "axis": {"labelAngle": 0}
+        },
+        "y": {"field": "Percent", "type": "quantitative", "title": "Percent"},
+        "order": {"aggregate": "sum", "field": "Age"},
+        "color": {
+          "field": "Age",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "18-24",
+              "25-34",
+              "35-44",
+              "45-54",
+              "55-64",
+              "65 years and over"
+            ],
+            "range": [
+              "#48cae4",
+              "#00b4d8",
+              "#0096c7",
+              "#0077b6",
+              "#023e8a",
+              "#03045e"
+            ]
+          },
+          "title": "Age"
+        },
+        "opacity": {
+          "condition": {"selection": "age_highlight", "value": 1},
+          "value": 0.25
+        },
+        "tooltip": [
+          {"field": "Distress Level", "type": "nominal"},
+          {"field": "Age", "type": "nominal"},
+          {"field": "Percent", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "normal",
+        "color": "white",
+        "align": "center",
+        "baseline": "top"
+      },
+      "encoding": {
+        "x": {
+          "field": "Distress Level",
+          "type": "nominal",
+          "sort": ["Low", "Moderate", "High/Very High"]
+        },
+        "y": {"field": "Percent", "type": "quantitative", "stack": "zero"},
+        "detail": {"field": "Age"},
+        "text": {"field": "Percent", "type": "quantitative"},
+        "order": {"field": "Age", "type": "nominal", "sort": "ascending"}
+      }
+    }
+  ],
+  "config": {}
+}
