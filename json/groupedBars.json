@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "12-Month Mental Disorder by Age Group (2020-22)",
+  "width": 600,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/AnyMentalDisorder.csv"
+  },
+  "layer": [
+    {
+      "selection": {
+        "disorder_highlight": {
+          "type": "multi",
+          "fields": ["Mental Disorder"],
+          "bind": "legend"
+        }
+      },
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "Age",
+          "type": "nominal",
+          "sort": "ascending",
+          "axis": {"labelAngle": 0}
+        },
+        "y": {
+          "field": "Percent",
+          "type": "quantitative",
+          "title": "Percent of People"
+        },
+        "xOffset": {"field": "Mental Disorder"},
+        "color": {
+          "field": "Mental Disorder",
+          "type": "nominal",
+          "scale": {"domain": ["Any", "None"], "range": ["#e63946", "#03045e"]},
+          "title": "Mental Disorder"
+        },
+        "opacity": {
+          "condition": {"selection": "disorder_highlight", "value": 1},
+          "value": 0.3
+        },
+        "tooltip": [
+          {"field": "Age", "type": "nominal"},
+          {"field": "Mental Disorder", "type": "nominal"},
+          {"field": "Percent", "type": "quantitative"}
+        ]
+      }
+    }
+  ],
+  "config": {}
+}
