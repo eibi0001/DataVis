@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Total Government Spending on Mental Health Services (2013-2023)",
+  "width": 500,
+  "height": 300,
+  "data": {
+    "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/HealthSpending.csv"
+  },
+  "transform": [
+    {"calculate": "datum.Spending / 1000000", "as": "SpendingMillion"}
+  ],
+  "mark": {
+    "type": "line",
+    "point": true,
+    "strokeWidth": 2.5,
+    "color": "seagreen"
+  },
+  "encoding": {
+    "x": {"field": "Year", "type": "ordinal", "title": "Year"},
+    "y": {
+      "field": "SpendingMillion",
+      "type": "quantitative",
+      "title": "Spending ($ Millions)"
+    },
+    "tooltip": [
+      {"field": "Year", "type": "ordinal", "title": "Year"},
+      {
+        "field": "SpendingMillion",
+        "type": "quantitative",
+        "title": "Spending ($ Million)",
+        "format": ".2f"
+      }
+    ]
+  },
+  "config": {}
+}
