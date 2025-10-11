@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Mental Health Disorder Broken Down into Types Among 16-24 Year olds",
+  "title": "Types of Mental Health Disorders Among 16-24 Year olds (of those with any disorder)",
   "width": 400,
-  "height": 400,
+  "height": 500,
   "data": {
     "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/TypesOfDisorders.csv"
   },
@@ -28,7 +28,7 @@
               "Substance use disorders",
               "Other"
             ],
-            "range": ["#2D87BB", "#64C2A6", "#AADEA7", "#E6F69D"]
+            "scheme": "reds"
           },
           "title": "Mental Disorders"
         },
