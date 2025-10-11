@@ -57,7 +57,7 @@
     {
       "mark": {
         "type": "text",
-        "radius": 165, 
+        "radius": 175, 
         "fontSize": 10,
         "fontWeight": "bold"
       },
