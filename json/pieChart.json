@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Types of Mental Health Disorders Among 16-24 Year olds (of those with any disorder)",
+  "title": "Mental Health Disorder Types Among 16-24 Year olds (of those with any disorder)",
   "width": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/TypesOfDisorders.csv"
@@ -58,7 +58,7 @@
       "mark": {
         "type": "text",
         "radius": 195,
-        "fontSize": 12,
+        "fontSize": 10,
         "fontWeight": "bold"
       },
       "encoding": {
