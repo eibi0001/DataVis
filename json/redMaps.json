@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": {
-      "expr": "'Lifetime Suicidal Thoughts Among 16-24 Year-Olds (2020-22) - ' + select_gender"
+      "expr": "'Lifetime Suicidal Thoughts Among 16-24 Year-Olds - ' + select_gender"
     }
   },
   "width": "container",
