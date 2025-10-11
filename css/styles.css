@@ -15,6 +15,10 @@ body {
     padding-top: 35px;
 }
 
+h1 {
+    text-align: center;
+}
+
 .description-right {
     padding-left: 20px;
 }
