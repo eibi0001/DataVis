@@ -5,8 +5,7 @@
       "expr": "'Lifetime Suicidal Thoughts Among 16-24 Year-Olds (2020-22) - ' + select_gender"
     }
   },
-  "width": 450,
-  "height": 400,
+  "width": "container",
   "projection": {"type": "mercator"},
   "params": [
     {
