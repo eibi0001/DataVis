@@ -1,17 +1,20 @@
+body {
+    background-color: lightgray;
+}
 .vis-container {
     width: 100%;
     border-radius: 10px;
-    height: 400px;
+    height: 500px;
 }
 
 .page {
-    width: 850px;
+    width: 1000px;
     background-color: white;
     margin: auto;
     padding: 50px;  
 }
 
 .pure-g {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
