@@ -86,7 +86,7 @@
         "type": "text",
         "fontSize": 11,
         "fontWeight": "bold",
-        "color": "white"
+        "color": "black"
       },
       "encoding": {
         "text": {"field": "properties.name"},
@@ -95,7 +95,7 @@
       },
       "transform": [
         {
-          "filter": "datum.properties.name != 'Australian Capital Territory' && datum.properties.name != 'Ashmore and Cartier Islands' && datum.properties.name != 'Coral Sea Islands' && datum.properties.name != 'Jervis Bay Territory' && datum.properties.name != 'Nusa Tenggara Timur' && datum.properties.name != 'Tasmania'"
+          "filter": "datum.properties.name != 'Australian Capital Territory' && datum.properties.name != 'Ashmore and Cartier Islands' && datum.properties.name != 'Coral Sea Islands' && datum.properties.name != 'Jervis Bay Territory' && datum.properties.name != 'Nusa Tenggara Timur'"
         }
       ]
     }
