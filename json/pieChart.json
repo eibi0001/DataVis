@@ -14,7 +14,7 @@
           "bind": "legend"
         }
       },
-      "mark": {"type": "arc", "outerRadius": 145},
+      "mark": {"type": "arc", "outerRadius": 130},
       "encoding": {
         "theta": {"field": "Percent", "type": "quantitative", "stack": true},
         "color": {
@@ -57,7 +57,7 @@
     {
       "mark": {
         "type": "text",
-        "radius": 195, 
+        "radius": 190, 
         "fontSize": 10,
         "fontWeight": "bold"
       },
