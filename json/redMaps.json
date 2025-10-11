@@ -84,7 +84,7 @@
       },
       "mark": {
         "type": "text",
-        "fontSize": 11,
+        "fontSize": 10,
         "fontWeight": "bold",
         "color": "black"
       },
