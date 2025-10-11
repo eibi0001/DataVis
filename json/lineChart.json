@@ -1,8 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": "Total Government Spending on Mental Health Services (2013-2023)",
-  "width": 500,
-  "height": 300,
+  "width": "container",
   "data": {
     "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/HealthSpending.csv"
   },
