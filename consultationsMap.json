@@ -5,8 +5,7 @@
       "expr": "'Use of Mental Health Consultations Among 16-24 Year-Olds - ' + select_gender"
     }
   },
-  "width": 450,
-  "height": 400,
+  "width": "container",
   "projection": {"type": "mercator"},
   "params": [
     {
