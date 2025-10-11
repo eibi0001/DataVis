@@ -1,25 +1,9 @@
-Region,Gender,Percent
-New South Wales,All,17.5
-Victoria,All,18.2
-Queensland,All,23.9
-South Australia,All,20.8
-Western Australia,All,20.2
-Tasmania,All,25.2
-Northern Territory,All,28.3
-Australian Capital Territory,All,22.4
-New South Wales,Male,15.4
-Victoria,Male,15.9
-Queensland,Male,20.9
-South Australia,Male,18.3
-Western Australia,Male,17.5
-Tasmania,Male,22.0
-Northern Territory,Male,25.2
-Australian Capital Territory,Male,19.5
-New South Wales,Female,19.9
-Victoria,Female,20.7
-Queensland,Female,27.0
-South Australia,Female,23.5
-Western Australia,Female,23.1
-Tasmania,Female,28.7
-Northern Territory,Female,31.6
-Australian Capital Territory,Female,25.3
+Region,All,Male,Female
+New South Wales,17.5,15.4,19.9
+Victoria,18.2,15.9,20.7
+Queensland,23.9,20.9,27.0
+South Australia,20.8,18.3,23.5
+Western Australia,20.2,17.5,23.1
+Tasmania,25.2,22.0,28.7
+Northern Territory,28.3,25.2,31.6
+Australian Capital Territory,22.4,19.5,25.3
