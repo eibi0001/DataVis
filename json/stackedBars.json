@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": "Psychological Distress Levels Across Age Groups",
+  "width": 400,
+  "height": 400,
+  "data": {
+    "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/DistressByAge.csv"
+  },
+  "layer": [
+    {
+      "selection": {
+        "distress_highlight": {
+          "type": "multi",
+          "fields": ["Distress Level"],
+          "bind": "legend"
+        }
+      },
+      "mark": {"type": "bar"},
+      "encoding": {
+        "x": {"field": "Age", "type": "nominal", "axis": {"labelAngle": 0}},
+        "y": {"field": "Percent", "type": "quantitative", "title": "Percent"},
+        "order": {"aggregate": "sum", "field": "Distress Level"},
+        "color": {
+          "field": "Distress Level",
+          "type": "nominal",
+          "scale": {
+            "domain": ["Low", "Moderate", "High/Very High"],
+            "range": ["#48cae4", "#0096c7", "#03045e"]
+          },
+          "title": "Distress level"
+        },
+        "opacity": {
+          "condition": {"selection": "distress_highlight", "value": 1},
+          "value": 0.25
+        },
+        "tooltip": [
+          {"field": "Age", "type": "nominal"},
+          {"field": "Distress Level", "type": "nominal"},
+          {"field": "Percent", "type": "quantitative"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 12,
+        "fontWeight": "bold",
+        "color": "white",
+        "align": "center",
+        "baseline": "top"
+      },
+      "encoding": {
+        "x": {"field": "Age", "type": "nominal"},
+        "y": {"field": "Percent", "type": "quantitative", "stack": "zero"},
+        "text": {"field": "Percent", "type": "quantitative"},
+        "order": {"field": "Age", "type": "nominal", "sort": "ascending"}
+      }
+    }
+  ],
+  "config": {}
+}
