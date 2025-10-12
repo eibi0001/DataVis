@@ -4,7 +4,7 @@
   "width": "container"
   "data": {
     "url": "https://raw.githubusercontent.com/eibi0001/DataVis/main/data/DistressByAge.csv"
-  },
+  }, 
   "layer": [
     {
       "selection": {
