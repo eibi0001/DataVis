@@ -54,19 +54,6 @@
         "text": {"field": "Percent", "type": "quantitative"}
       }
     },
-    {
-      "mark": {
-        "type": "text",
-        "radius": 175, 
-        "fontSize": 10,
-        "fontWeight": "bold"
-      },
-      "encoding": {
-        "theta": {"field": "Percent", "type": "quantitative", "stack": true},
-        "text": {"field": "Mental Disorder", "type": "nominal"},
-        "color": {"field": "Mental Disorder", "type": "nominal"}
-      }
-    }
   ],
   "config": {}
 }
