@@ -31,7 +31,7 @@
         "color": {
           "field": "Mental Disorder",
           "type": "nominal",
-          "scale": {"domain": ["Any", "None"], "range": ["#03045e", "#48cae4"]},
+          "scale": {"domain": ["Any", "None"], "range": ["#083d77", "#ebebd3"]},
           "title": "Mental Disorder"
         },
         "opacity": {
