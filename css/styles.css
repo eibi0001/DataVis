@@ -12,7 +12,9 @@ h2, h3 {
 }
 
 p {
-    color: #444444
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #6d4c41;
     font-size: 16px;
 }
 
