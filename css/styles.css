@@ -33,8 +33,10 @@ body {
 }
 
 .pure-u-1-1 h1 {
-    background-color: #ffe8d6;
-    color: white;
-    padding: 10px 15px;
+    background-color: #f8e5df;
+    color: #5c4033;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: 900;
 }
 
