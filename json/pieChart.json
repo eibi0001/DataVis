@@ -53,7 +53,7 @@
         "theta": {"field": "Percent", "type": "quantitative", "stack": true},
         "text": {"field": "Percent", "type": "quantitative"}
       }
-    },
+    }
   ],
   "config": {}
 }
