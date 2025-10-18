@@ -2,6 +2,20 @@ h1 {
     text-align: center;
 }
 
+h1,h2,h3 {
+    font-weight: 700;
+    letter-spacing: 0.4px;
+}
+
+h2, h3 {
+    color: #6d4c41;
+}
+
+p {
+    color: #444444
+    font-size: 16px;
+}
+
 .vis-container {
     width: 100%;
     border-radius: 10px;
@@ -31,7 +45,6 @@ body {
     border: 2px solid #f2cbbe;
     border-radius: 15px;
     padding: 20px;
-    box-shadow: 0 4px 10px rgba (0,0,0,0.05);
 }
 
 .pure-u-1-1 h1 {
