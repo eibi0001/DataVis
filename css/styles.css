@@ -30,5 +30,11 @@ body {
     border: 2px solid #f2cbbe;
     border-radius: 15px;
     padding: 20px;
-    
 }
+
+.pure-u-1-1 h1 {
+    background-color: #f7dcd0;
+    color: white;
+    padding: 10px 15px;
+}
+
